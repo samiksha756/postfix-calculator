@@ -1,4 +1,4 @@
-<img width="1435" height="780" alt="image" src="https://github.com/user-attachments/assets/ac179b20-127b-4fd3-9bf2-759dbc6c3f05" /># Postfix++ Calculator (Node.js CLI)
+# Postfix++ Calculator (Node.js CLI)
 
 A simple **postfix (Reverse-Polish)** calculator with a stack, single-letter variables (**A–Z**), built-in constants (**PI**, **E**), arithmetic operators, and math functions.  
 Runs interactively in your terminal.

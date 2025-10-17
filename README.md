@@ -29,9 +29,9 @@ Clone or download the repo, then:
 node postfixpp.js
 ```
 You'll see:
-```Postfix++ Calculator (type 'help' or '?' for commands)
->
-```
+`Postfix++ Calculator (type 'help' or '?' for commands)
+>`
+
 Type an expression and press **Enter**
 
 ### Usage

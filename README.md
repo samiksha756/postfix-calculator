@@ -29,5 +29,5 @@ Clone or download the repo, then:
 node postfixpp.js
 ```
 
-##License
+## License
 This project is released under the terms in LICENSE.txt.

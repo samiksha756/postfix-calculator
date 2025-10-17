@@ -28,6 +28,3 @@ Clone or download the repo, then:
 ```bash
 node postfixpp.js
 ```
-
-## License
-This project is released under the terms in LICENSE.txt.

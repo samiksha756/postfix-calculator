@@ -28,9 +28,10 @@ Clone or download the repo, then:
 ```bash
 node postfixpp.js
 ```
-You'll see:
-`Postfix++ Calculator (type 'help' or '?' for commands)
->`
+#### You'll see:
+```Postfix++ Calculator (type 'help' or '?' for commands)
+>
+```
 
 Type an expression and press **Enter**
 
@@ -77,3 +78,28 @@ Type an expression and press **Enter**
 ```
 #### Exit
 Press **Ctrl + C**
+
+
+## How It Works (Brief)
+- Stack (`Array`) holds operands during evaluation.
+- Symbol table stores values for variables `A...Z`.
+    - Token loop processes space-separated tokens in order:
+    - Number -> push.
+    - Variable name -> if assigned, push value; otherwise you may get an “undefined variable” error.
+    - Constant -> push numeric value.
+    - Operator -> pop two values, compute, push result.
+    - Function -> pop one value, compute, push result.
+    - `=` -> assignment (valid only for single-letter variable names).
+    - `clear` -> empties the stack.
+    - `help` / `?` -> prints usage.
+- After each input line, the stack is printed (rounded to 6 decimals).
+
+## Error Handling
+- Unknown token: prints a friendly error and continues.
+- Insufficient operands: reports stack underflow for the operator/function.
+- Invalid assignment: only `A...Z` are valid variable names.
+- Undefined variable: attempting to use an unassigned variable is reported.
+- Math domain errors: e.g., `sqrt` of a negative number -> reported.
+
+## License
+See LICENSE.txt.
